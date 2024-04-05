@@ -21,4 +21,11 @@ internal class LinqFilter
         Console.WriteLine($"Exibindo artistas por gênero musical: {genero} \n");
         artistasPorGeneroMusical.ForEach(artista => Console.WriteLine($"- {artista}"));
     }
+
+    public static void FiltrarMusicasDeUmArtista(List<Musica> musicas, string nomeDoArtista)
+    {
+        var musicasDoArtista = musicas.Where(musica => musica.Artista!.Equals(nomeDoArtista)).ToList();
+        Console.WriteLine(nomeDoArtista);
+        musicasDoArtista.ForEach(musica => Console.WriteLine($"- {musica.Nome}"));
+    }
 }
