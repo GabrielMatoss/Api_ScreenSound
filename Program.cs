@@ -11,7 +11,8 @@ using (HttpClient client = new())
         //LinqFilter.FiltrarTodosOsGenerosMusicais(musicas);
         //LinqOrder.ExibirListaDeArtistasOrdenados(musicas);
         //LinqFilter.FiltrarArtistasPorGeneroMusical(musicas, "rock");
-        LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Michel Teló");
+        //LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Michel Teló");
+        LinqFilter.FiltrarMusicasPorAno(musicas, 2005);
     }
     catch (Exception ex)
     {
