@@ -1,0 +1,45 @@
+{
+    "nome": "Gabriel",
+    "musicas": [
+        {
+            "song": "1, 2, 3 (feat. Jason Derulo \u0026 De La Ghetto)",
+            "artist": "Sof\u00EDa Reyes",
+            "duration_ms": 201526,
+            "genre": "pop, latin",
+            "year": "2018",
+            "Ano": 2018
+        },
+        {
+            "song": "24K Magic",
+            "artist": "Bruno Mars",
+            "duration_ms": 225983,
+            "genre": "pop",
+            "year": "2016",
+            "Ano": 2016
+        },
+        {
+            "song": "1955",
+            "artist": "Hilltop Hoods",
+            "duration_ms": 239280,
+            "genre": "hip hop, pop",
+            "year": "2016",
+            "Ano": 2016
+        },
+        {
+            "song": "Airplanes (feat. Hayley Williams of Paramore)",
+            "artist": "B.o.B",
+            "duration_ms": 180480,
+            "genre": "hip hop, pop",
+            "year": "2010",
+            "Ano": 2010
+        },
+        {
+            "song": "All You Wanted",
+            "artist": "Michelle Branch",
+            "duration_ms": 217680,
+            "genre": "pop, Folk/Acoustic",
+            "year": "2001",
+            "Ano": 2001
+        }
+    ]
+}
