@@ -4,27 +4,30 @@ using ScreenSoundApi.Modelos;
 
 using (HttpClient client = new())
 {
+}
     try
     {
         string resposta = await client.GetStringAsync("https://guilhermeonrails.github.io/api-csharp-songs/songs.json");
         var musicas = JsonSerializer.Deserialize<List<Musica>>(resposta)!;
+        LinqFilter.FiltrarMusicasPorTonalidade(musicas, $@"C");
+        //musicas[0].ExibirDetalhesDaMusica();
         //LinqFilter.FiltrarTodosOsGenerosMusicais(musicas);
         //LinqOrder.ExibirListaDeArtistasOrdenados(musicas);
         //LinqFilter.FiltrarArtistasPorGeneroMusical(musicas, "rock");
         //LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Michel Teló");
         //LinqFilter.FiltrarMusicasPorAno(musicas, 2005);
 
-        var minhasMusicasFavoritas = new MusicasFavoritas("Gabriel");
+        // var minhasMusicasFavoritas = new MusicasFavoritas("Gabriel");
 
-        minhasMusicasFavoritas.AdicionarMusicasFavoritas(musicas[8]);
-        minhasMusicasFavoritas.AdicionarMusicasFavoritas(musicas[20]);
-        minhasMusicasFavoritas.AdicionarMusicasFavoritas(musicas[10]);
-        minhasMusicasFavoritas.AdicionarMusicasFavoritas(musicas[54]);
-        minhasMusicasFavoritas.AdicionarMusicasFavoritas(musicas[76]);
+        // minhasMusicasFavoritas.AdicionarMusicasFavoritas(musicas[8]);
+        // minhasMusicasFavoritas.AdicionarMusicasFavoritas(musicas[20]);
+        // minhasMusicasFavoritas.AdicionarMusicasFavoritas(musicas[10]);
+        // minhasMusicasFavoritas.AdicionarMusicasFavoritas(musicas[54]);
+        // minhasMusicasFavoritas.AdicionarMusicasFavoritas(musicas[76]);
 
-        minhasMusicasFavoritas.ExibirMusicasFavoritas();
+        // minhasMusicasFavoritas.ExibirMusicasFavoritas();
 
-        minhasMusicasFavoritas.GerarArquivoJson();
+        // minhasMusicasFavoritas.GerarArquivoJson();
     }
     catch (Exception ex)
     {

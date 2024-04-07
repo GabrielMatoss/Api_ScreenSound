@@ -39,4 +39,11 @@ internal class LinqFilter
         Console.WriteLine($"Musicas do ano: {ano} \n");
         musicasDoAno.ForEach(musica => Console.WriteLine($"- {musica.Nome}"));
     }
+
+    public static void FiltrarMusicasPorTonalidade(List<Musica> musicas, string tonalidade)
+    {
+        var musicasPorTonalidade = musicas.Where(e => e.Tonalidade.Equals(tonalidade)).ToList();
+        Console.WriteLine($"Musicas por tonalidade: {tonalidade} \n");
+        musicasPorTonalidade.ForEach(musica => Console.WriteLine($"- {musica.Nome}, {musica.Tonalidade}"));
+    }
 }
